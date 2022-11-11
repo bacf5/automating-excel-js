@@ -4,9 +4,8 @@
   "description": "",
   "main": "calculate.js",
   "dependencies": {
-    "xlsx": "^0.17.1"
+    "xlsx": "^0.17.5"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
