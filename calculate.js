@@ -1,9 +1,9 @@
 const xlsx = require('xlsx');
 
 const workbook = xlsx.readFile('scores.xlsx'); // --> nombre del archivo a leer
-const worksheet = workbook.Sheets['Sheet1']; // --> nombre de la hoja de trabajo
+const worksheet = workbook.Sheets['Sheet1']; // --> [nombre de la hoja de trabajo]
 
-const arrStudents = xlsx.utils.sheet_to_json(worksheet);
+const arrStudents = xlsx.utils.sheet_to_json(worksheet); // --> convierte la hoja de excel en json object
 const highSchoolData = {}; // {highSchool: {numStudents: 0, cumalativeScore: 0}}
 
 // Fill out highSchoolData
